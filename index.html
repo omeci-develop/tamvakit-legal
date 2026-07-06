@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index,follow">
+<title>Privacy Policy — Tam Vakit</title>
+<style>
+  :root{
+    --bg:#ffffff; --fg:#1a1c20; --muted:#5b6270; --line:#e6e8ec;
+    --accent:#0b7a5b; --card:#f6f8f7;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#111316; --fg:#e8eaed; --muted:#9aa1ac; --line:#262a30;
+           --accent:#3ecf9a; --card:#1a1d21; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);
+    font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;}
+  .wrap{max-width:760px;margin:0 auto;padding:2rem 1.2rem 4rem;}
+  header{display:flex;flex-wrap:wrap;gap:1rem;align-items:center;
+    justify-content:space-between;border-bottom:1px solid var(--line);
+    padding-bottom:1rem;margin-bottom:1.5rem;}
+  h1{font-size:1.5rem;margin:.2rem 0;}
+  h2{font-size:1.15rem;margin:2rem 0 .5rem;padding-top:.3rem;}
+  h3{font-size:1rem;margin:1.3rem 0 .3rem;color:var(--accent);}
+  p,li{color:var(--fg);} .muted{color:var(--muted);font-size:.9rem;}
+  a{color:var(--accent);}
+  .langs{display:flex;gap:.4rem;}
+  .langs button{font:inherit;font-size:.9rem;cursor:pointer;border:1px solid var(--line);
+    background:var(--card);color:var(--fg);padding:.35rem .7rem;border-radius:.5rem;}
+  .langs button[aria-selected="true"]{background:var(--accent);color:#fff;border-color:var(--accent);}
+  .promise{background:var(--card);border:1px solid var(--line);border-radius:.75rem;
+    padding:1rem 1.1rem;margin:1rem 0;}
+  section[hidden]{display:none;}
+  code{background:var(--card);padding:.1rem .3rem;border-radius:.3rem;font-size:.9em;}
+  footer{margin-top:2.5rem;border-top:1px solid var(--line);padding-top:1rem;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Tam Vakit</h1>
+      <div class="muted" id="subtitle">Privacy Policy</div>
+    </div>
+    <div class="langs" role="tablist" aria-label="Language">
+      <button data-lang="en" role="tab" aria-selected="true">English</button>
+      <button data-lang="de" role="tab" aria-selected="false">Deutsch</button>
+      <button data-lang="tr" role="tab" aria-selected="false">Türkçe</button>
+    </div>
+  </header>
+
+  <!-- ============ ENGLISH ============ -->
+  <section data-lang="en">
+    <p class="muted"><strong>Effective date:</strong> 5 July 2026 · <strong>Version:</strong> 1.0</p>
+    <h2>1. Who is responsible</h2>
+    <p>This app (&ldquo;Tam Vakit&rdquo;, &ldquo;the app&rdquo;) is published by <strong>Omeci Labs</strong>
+      (the &ldquo;we&rdquo;/&ldquo;us&rdquo;), the data controller under the EU General Data Protection
+      Regulation (GDPR).</p>
+    <ul>
+      <li><strong>Contact:</strong> <a href="mailto:support@omecilabs.com">support@omecilabs.com</a></li>
+      <li><strong>Postal address:</strong> <em>[business address — to be added before publication]</em></li>
+    </ul>
+    <div class="promise">
+      <h2 style="margin-top:0">2. Our privacy promise in one paragraph</h2>
+      <p style="margin-bottom:0">Tam Vakit is built to work <strong>without an account, without a cloud, and
+      without advertising or tracking.</strong> We operate <strong>no servers of our own</strong> and therefore
+      <strong>cannot</strong> collect, store, or see your personal data. Your location and settings stay
+      <strong>on your device</strong>. The few cases in which data leaves your device are listed explicitly
+      below — and each one is either optional or triggered by you.</p>
+    </div>
+    <h2>3. What the app processes, and where the data goes</h2>
+    <h3>3.1 Location (GPS)</h3>
+    <p>To show correct prayer times and the Qibla direction, the app needs your geographic coordinates.
+      They are obtained on your device only after you grant location permission, used for local calculation
+      of prayer times and the Qibla bearing, stored <strong>only on your device</strong>, and
+      <strong>never transmitted to us</strong> (we have no server to receive them). Legal basis: your
+      consent, Art. 6(1)(a) GDPR. You can revoke it any time in your system settings; the app then falls
+      back to manual location entry.</p>
+    <h3>3.2 Place-name lookup (reverse geocoding)</h3>
+    <p>To display a readable place name instead of raw coordinates, the app may pass your coordinates to
+      your device&rsquo;s built-in geocoding service — <strong>Google Play Services</strong> on Android,
+      <strong>Apple</strong> on iOS — governed by <strong>their</strong> privacy policy, not ours. This is
+      not essential: if it fails or is offline, the app keeps working.</p>
+    <h3>3.3 Notifications (Adhan / prayer reminders)</h3>
+    <p>Prayer-time notifications are scheduled and delivered <strong>locally on your device</strong>. There
+      is <strong>no push server</strong> — nothing about your prayer schedule leaves the device.</p>
+    <h3>3.4 Optional official prayer-time source</h3>
+    <p>The app can optionally obtain prayer times from an official provider (e.g. the Turkish Diyanet).
+      <strong>This source is switched off in the published app.</strong> If a future build or setting enables
+      it, the location or city you select is sent to that provider only to retrieve the times, under that
+      provider&rsquo;s own privacy policy. We will update this policy before activating any such source.</p>
+    <h3>3.5 Contacting support</h3>
+    <p>If you use &ldquo;Report a problem&rdquo;, it opens a pre-filled email to
+      <a href="mailto:support@omecilabs.com">support@omecilabs.com</a> in <strong>your</strong> mail app.
+      Before you send, the app shows you the plain-text diagnostic block it adds — app version, device model,
+      OS version, language, notification/battery permission states, and your chosen calculation method.
+      <strong>It contains no location and no device identifiers.</strong> The email is sent only if you send
+      it.</p>
+    <h3>3.6 Purchases (Premium &amp; voluntary support)</h3>
+    <p>Optional in-app purchases are processed entirely by the <strong>Google Play Store</strong> or the
+      <strong>Apple App Store</strong>. We never see your payment data — only the store&rsquo;s confirmation
+      that a purchase is valid.</p>
+    <h2>4. What we do <em>not</em> do</h2>
+    <ul>
+      <li><strong>No advertising</strong>, no ad networks, no ad identifiers.</li>
+      <li><strong>No analytics</strong> and no third-party tracking or profiling.</li>
+      <li><strong>No user account</strong>, no login, no cloud sync.</li>
+      <li><strong>No selling or sharing</strong> of personal data — we have none to sell.</li>
+      <li><strong>No crash reporting is active</strong> in this version. Any future crash reporting will be
+        opt-in, off by default, and described here first.</li>
+    </ul>
+    <h2>5. Storage and retention</h2>
+    <p>All app data is stored <strong>only on your device</strong>. We keep no copies because we have no
+      servers. <strong>Uninstalling the app removes this data</strong> from your device.</p>
+    <h2>6. Recipients / third parties</h2>
+    <p>We share personal data with <strong>no one</strong>. Data leaves your device only to the OS geocoding
+      provider (Google / Apple, §3.2), the app store for purchases (§3.6), and an optional official
+      prayer-time provider if you enable it (§3.4) — each under its own privacy policy.</p>
+    <h2>7. International transfers</h2>
+    <p>Because we run no servers, we perform no international data transfers ourselves. Any transfer arises
+      only from the third-party platform services above, under their safeguards.</p>
+    <h2>8. Your rights (GDPR)</h2>
+    <p>You have the rights of access, rectification, erasure, restriction, portability, and objection
+      (Art. 15–21 GDPR). Since we hold <strong>no</strong> personal data about you on any server, most are
+      exercised directly on your device (revoke location permission, clear app data, or uninstall). Contact
+      us at <a href="mailto:support@omecilabs.com">support@omecilabs.com</a>. You may also lodge a complaint
+      with a data protection supervisory authority.</p>
+    <h2>9. Children</h2>
+    <p>The app is suitable for a general audience and does not knowingly collect personal data from children.
+      It requires no account and no personal details to function.</p>
+    <h2>10. Changes to this policy</h2>
+    <p>We may update this policy as the app evolves. The current version and effective date are shown at the
+      top. Material changes will be reflected here before they take effect.</p>
+    <footer class="muted">Omeci Labs · <a href="mailto:support@omecilabs.com">support@omecilabs.com</a></footer>
+  </section>
+
+  <!-- ============ DEUTSCH ============ -->
+  <section data-lang="de" hidden>
+    <p class="muted"><strong>Gültig ab:</strong> 5. Juli 2026 · <strong>Version:</strong> 1.0</p>
+    <h2>1. Wer ist verantwortlich</h2>
+    <p>Diese App (&bdquo;Tam Vakit&ldquo;, &bdquo;die App&ldquo;) wird von <strong>Omeci Labs</strong>
+      (&bdquo;wir&ldquo;/&bdquo;uns&ldquo;) herausgegeben. Wir sind Verantwortlicher im Sinne der
+      EU-Datenschutz-Grundverordnung (DSGVO).</p>
+    <ul>
+      <li><strong>Kontakt:</strong> <a href="mailto:support@omecilabs.com">support@omecilabs.com</a></li>
+      <li><strong>Postanschrift:</strong> <em>[Geschäftsadresse — wird vor Veröffentlichung ergänzt]</em></li>
+    </ul>
+    <div class="promise">
+      <h2 style="margin-top:0">2. Unser Datenschutz-Versprechen in einem Absatz</h2>
+      <p style="margin-bottom:0">Tam Vakit funktioniert <strong>ohne Konto, ohne Cloud und ohne Werbung oder
+      Tracking.</strong> Wir betreiben <strong>keine eigenen Server</strong> und können deine
+      personenbezogenen Daten daher <strong>nicht</strong> erheben, speichern oder einsehen. Dein Standort und
+      deine Einstellungen bleiben <strong>auf deinem Gerät</strong>. Die wenigen Fälle, in denen Daten das
+      Gerät verlassen, sind unten ausdrücklich aufgeführt — und jeder ist entweder optional oder wird von dir
+      ausgelöst.</p>
+    </div>
+    <h2>3. Was die App verarbeitet und wohin die Daten gehen</h2>
+    <h3>3.1 Standort (GPS)</h3>
+    <p>Für korrekte Gebetszeiten und die Qibla-Richtung benötigt die App deine Koordinaten. Sie werden auf
+      deinem Gerät erst nach Erteilung der Standortberechtigung ermittelt, zur lokalen Berechnung von
+      Gebetszeiten und Qibla genutzt, <strong>nur lokal gespeichert</strong> und <strong>niemals an uns
+      übertragen</strong> (wir haben keinen Server, der sie empfangen könnte). Rechtsgrundlage: deine
+      Einwilligung, Art. 6 Abs. 1 lit. a DSGVO. Du kannst sie jederzeit in den Systemeinstellungen widerrufen;
+      die App nutzt dann die manuelle Standorteingabe.</p>
+    <h3>3.2 Ortsname-Auflösung (Reverse-Geocoding)</h3>
+    <p>Um statt roher Koordinaten einen lesbaren Ortsnamen anzuzeigen, kann die App deine Koordinaten an den
+      im Gerät eingebauten Geocoding-Dienst übergeben — <strong>Google Play Services</strong> unter Android,
+      <strong>Apple</strong> unter iOS — nach <strong>dessen</strong> Datenschutzerklärung, nicht unserer.
+      Das ist nicht zwingend: Schlägt es fehl oder bist du offline, funktioniert die App weiter.</p>
+    <h3>3.3 Benachrichtigungen (Adhan / Gebetserinnerungen)</h3>
+    <p>Benachrichtigungen werden <strong>lokal auf deinem Gerät</strong> geplant und ausgelöst. Es gibt
+      <strong>keinen Push-Server</strong> — nichts über deinen Gebetsplan verlässt das Gerät.</p>
+    <h3>3.4 Optionale offizielle Gebetszeiten-Quelle</h3>
+    <p>Die App kann Gebetszeiten optional von einer offiziellen Quelle beziehen (z. B. der türkischen
+      Diyanet). <strong>In der veröffentlichten App ist diese Quelle abgeschaltet.</strong> Aktiviert ein
+      künftiger Build oder eine Einstellung sie, wird der gewählte Standort bzw. die Stadt ausschließlich zum
+      Abruf der Zeiten an diesen Anbieter gesendet — nach dessen Datenschutzerklärung. Wir aktualisieren diese
+      Erklärung, bevor eine solche Quelle aktiviert wird.</p>
+    <h3>3.5 Support-Kontakt</h3>
+    <p>Nutzt du &bdquo;Problem melden&ldquo;, öffnet sich in <strong>deiner</strong> Mail-App eine
+      vorbefüllte E-Mail an <a href="mailto:support@omecilabs.com">support@omecilabs.com</a>. Vor dem Senden
+      zeigt dir die App den Diagnose-Block im Klartext — App-Version, Gerätemodell, OS-Version, Sprache,
+      Berechtigungs-Status von Benachrichtigungen/Akku und deine Berechnungsmethode. <strong>Er enthält
+      keinen Standort und keine Geräte-Kennungen.</strong> Gesendet wird nur, wenn du sendest.</p>
+    <h3>3.6 Käufe (Premium &amp; freiwillige Unterstützung)</h3>
+    <p>Optionale In-App-Käufe werden vollständig über den <strong>Google Play Store</strong> bzw. den
+      <strong>Apple App Store</strong> abgewickelt. Deine Zahlungsdaten sehen wir nie — nur die Bestätigung
+      des Stores, dass ein Kauf gültig ist.</p>
+    <h2>4. Was wir <em>nicht</em> tun</h2>
+    <ul>
+      <li><strong>Keine Werbung</strong>, keine Werbenetzwerke, keine Werbe-IDs.</li>
+      <li><strong>Keine Analyse</strong> und kein Tracking oder Profiling durch Dritte.</li>
+      <li><strong>Kein Nutzerkonto</strong>, kein Login, keine Cloud-Synchronisierung.</li>
+      <li><strong>Kein Verkauf und keine Weitergabe</strong> personenbezogener Daten — wir haben keine.</li>
+      <li><strong>Kein Crash-Reporting aktiv</strong> in dieser Version. Ein späteres Crash-Reporting wäre
+        opt-in, standardmäßig aus und würde hier zuvor beschrieben.</li>
+    </ul>
+    <h2>5. Speicherung und Speicherdauer</h2>
+    <p>Alle App-Daten werden <strong>nur auf deinem Gerät</strong> gespeichert. Wir behalten keine Kopien, da
+      wir keine Server haben. <strong>Beim Deinstallieren werden diese Daten</strong> von deinem Gerät
+      entfernt.</p>
+    <h2>6. Empfänger / Dritte</h2>
+    <p>Wir geben personenbezogene Daten an <strong>niemanden</strong> weiter. Daten verlassen dein Gerät nur
+      an den OS-Geocoding-Dienst (Google / Apple, §3.2), den App-Store für Käufe (§3.6) und einen optionalen
+      offiziellen Gebetszeiten-Anbieter, falls du ihn aktivierst (§3.4) — jeweils nach deren eigener
+      Datenschutzerklärung.</p>
+    <h2>7. Internationale Übermittlungen</h2>
+    <p>Da wir keine Server betreiben, nehmen wir selbst keine internationalen Datenübermittlungen vor. Eine
+      Übermittlung entsteht nur durch die oben genannten Plattformdienste Dritter, nach deren Garantien.</p>
+    <h2>8. Deine Rechte (DSGVO)</h2>
+    <p>Dir stehen die Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit und
+      Widerspruch zu (Art. 15–21 DSGVO). Da wir <strong>keine</strong> personenbezogenen Daten über dich auf
+      einem Server vorhalten, übst du die meisten direkt auf deinem Gerät aus (Standortberechtigung
+      widerrufen, App-Daten löschen oder deinstallieren). Kontakt:
+      <a href="mailto:support@omecilabs.com">support@omecilabs.com</a>. Du hast zudem das Recht, dich bei
+      einer Datenschutz-Aufsichtsbehörde zu beschweren.</p>
+    <h2>9. Kinder</h2>
+    <p>Die App eignet sich für ein allgemeines Publikum und erhebt wissentlich keine personenbezogenen Daten
+      von Kindern. Sie benötigt weder ein Konto noch persönliche Angaben, um zu funktionieren.</p>
+    <h2>10. Änderungen dieser Erklärung</h2>
+    <p>Wir können diese Erklärung mit der Weiterentwicklung der App anpassen. Die aktuelle Version und das
+      Gültig-ab-Datum stehen oben. Wesentliche Änderungen werden hier abgebildet, bevor sie wirksam werden.</p>
+    <footer class="muted">Omeci Labs · <a href="mailto:support@omecilabs.com">support@omecilabs.com</a></footer>
+  </section>
+
+  <!-- ============ TÜRKÇE ============ -->
+  <section data-lang="tr" hidden>
+    <p class="muted"><strong>Yürürlük tarihi:</strong> 5 Temmuz 2026 · <strong>Sürüm:</strong> 1.0</p>
+    <h2>1. Sorumlu kim</h2>
+    <p>Bu uygulama (&ldquo;Tam Vakit&rdquo;, &ldquo;uygulama&rdquo;) <strong>Omeci Labs</strong>
+      (&ldquo;biz&rdquo;) tarafından yayımlanmaktadır. AB Genel Veri Koruma Tüzüğü (GDPR) anlamında veri
+      sorumlusu biziz.</p>
+    <ul>
+      <li><strong>İletişim:</strong> <a href="mailto:support@omecilabs.com">support@omecilabs.com</a></li>
+      <li><strong>Posta adresi:</strong> <em>[iş adresi — yayımdan önce eklenecek]</em></li>
+    </ul>
+    <div class="promise">
+      <h2 style="margin-top:0">2. Tek paragrafta gizlilik sözümüz</h2>
+      <p style="margin-bottom:0">Tam Vakit <strong>hesap olmadan, bulut olmadan ve reklam veya takip
+      olmadan</strong> çalışacak şekilde tasarlanmıştır. <strong>Kendimize ait sunucu işletmiyoruz</strong>
+      ve bu nedenle kişisel verilerinizi toplayamaz, saklayamaz veya göremeyiz. Konumunuz ve ayarlarınız
+      <strong>cihazınızda</strong> kalır. Verilerin cihazdan ayrıldığı az sayıdaki durum aşağıda açıkça
+      belirtilmiştir — her biri ya isteğe bağlıdır ya da sizin tarafınızdan başlatılır.</p>
+    </div>
+    <h2>3. Uygulama neyi işler ve veri nereye gider</h2>
+    <h3>3.1 Konum (GPS)</h3>
+    <p>Doğru namaz vakitleri ve kıble yönü için uygulama koordinatlarınıza ihtiyaç duyar. Koordinatlar
+      cihazınızda yalnızca konum iznini verdikten sonra alınır, namaz vakitleri ve kıblenin yerel hesabı için
+      kullanılır, <strong>yalnızca cihazınızda</strong> saklanır ve <strong>bize asla iletilmez</strong>
+      (alacak bir sunucumuz yok). Hukuki dayanak: açık rızanız, GDPR Md. 6(1)(a). Bu izni sistem ayarlarından
+      istediğiniz zaman geri alabilirsiniz; uygulama o zaman elle konum girişine döner.</p>
+    <h3>3.2 Yer adı çözümlemesi (ters coğrafi kodlama)</h3>
+    <p>Ham koordinatlar yerine okunabilir bir yer adı göstermek için uygulama koordinatlarınızı cihazınızdaki
+      coğrafi kodlama hizmetine iletebilir — Android&rsquo;de <strong>Google Play Services</strong>,
+      iOS&rsquo;ta <strong>Apple</strong> — bizim değil, <strong>onların</strong> gizlilik politikasına tabi.
+      Zorunlu değildir: başarısız olursa veya çevrimdışıysanız uygulama çalışmaya devam eder.</p>
+    <h3>3.3 Bildirimler (ezan / namaz hatırlatmaları)</h3>
+    <p>Bildirimler <strong>cihazınızda yerel olarak</strong> planlanır ve gösterilir. <strong>Push sunucusu
+      yoktur</strong> — namaz programınıza dair hiçbir şey cihazdan ayrılmaz.</p>
+    <h3>3.4 İsteğe bağlı resmî namaz vakti kaynağı</h3>
+    <p>Uygulama namaz vakitlerini isteğe bağlı olarak resmî bir kaynaktan (örn. Diyanet) alabilir.
+      <strong>Yayımlanan uygulamada bu kaynak kapalıdır.</strong> İleride bir sürüm veya ayar bunu
+      etkinleştirirse, seçtiğiniz konum veya şehir yalnızca vakitleri almak için o sağlayıcıya gönderilir ve
+      sağlayıcının gizlilik politikasına tabidir. Böyle bir kaynağı etkinleştirmeden önce bu politikayı
+      güncelleriz.</p>
+    <h3>3.5 Destek ile iletişim</h3>
+    <p>&ldquo;Sorun bildir&rdquo; seçeneğini kullanırsanız, <strong>kendi</strong> e-posta uygulamanızda
+      <a href="mailto:support@omecilabs.com">support@omecilabs.com</a> adresine önceden doldurulmuş bir
+      e-posta açılır. Göndermeden önce uygulama, eklediği tanılama bloğunu düz metin olarak gösterir —
+      uygulama sürümü, cihaz modeli, işletim sistemi sürümü, dil, bildirim/pil izin durumları ve hesaplama
+      yöntemi. <strong>İçinde konum ve cihaz kimliği yoktur.</strong> E-posta yalnızca siz gönderirseniz
+      gönderilir.</p>
+    <h3>3.6 Satın almalar (Premium &amp; gönüllü destek)</h3>
+    <p>İsteğe bağlı uygulama içi satın almalar tamamen <strong>Google Play Store</strong> veya <strong>Apple
+      App Store</strong> üzerinden yürütülür. Ödeme verilerinizi asla görmeyiz — yalnızca mağazanın bir satın
+      almanın geçerli olduğuna dair onayını alırız.</p>
+    <h2>4. Yapmadıklarımız</h2>
+    <ul>
+      <li><strong>Reklam yok</strong>, reklam ağı yok, reklam kimliği yok.</li>
+      <li><strong>Analitik yok</strong> ve üçüncü taraf takip veya profilleme yok.</li>
+      <li><strong>Kullanıcı hesabı yok</strong>, giriş yok, bulut senkronizasyonu yok.</li>
+      <li>Kişisel verilerin <strong>satışı veya paylaşımı yok</strong> — zaten hiç verimiz yok.</li>
+      <li>Bu sürümde <strong>çökme raporlaması etkin değildir</strong>. İleride eklenirse isteğe bağlı,
+        varsayılan kapalı olur ve önce burada açıklanır.</li>
+    </ul>
+    <h2>5. Saklama ve saklama süresi</h2>
+    <p>Tüm uygulama verileri <strong>yalnızca cihazınızda</strong> saklanır. Sunucumuz olmadığından kopya
+      tutmayız. <strong>Uygulamayı kaldırmak bu verileri</strong> cihazınızdan siler.</p>
+    <h2>6. Alıcılar / üçüncü taraflar</h2>
+    <p>Kişisel verileri <strong>hiç kimseyle</strong> paylaşmayız. Veriler cihazınızdan yalnızca işletim
+      sisteminizin coğrafi kodlama sağlayıcısına (Google / Apple, §3.2), satın almalar için uygulama
+      mağazasına (§3.6) ve yalnızca siz etkinleştirirseniz isteğe bağlı resmî bir namaz vakti sağlayıcısına
+      (§3.4) ayrılır — her biri kendi gizlilik politikasına göre.</p>
+    <h2>7. Uluslararası aktarımlar</h2>
+    <p>Sunucu işletmediğimiz için uluslararası veri aktarımını kendimiz yapmayız. Bir aktarım yalnızca
+      yukarıdaki üçüncü taraf platform hizmetlerinden doğar, onların güvencelerine tabidir.</p>
+    <h2>8. Haklarınız (GDPR)</h2>
+    <p>Erişim, düzeltme, silme, kısıtlama, taşınabilirlik ve itiraz haklarına sahipsiniz (GDPR Md. 15–21).
+      Hakkınızda hiçbir sunucuda <strong>kişisel veri</strong> tutmadığımız için bunların çoğunu doğrudan
+      cihazınızda kullanırsınız (konum iznini geri alma, uygulama verilerini temizleme veya kaldırma).
+      İletişim: <a href="mailto:support@omecilabs.com">support@omecilabs.com</a>. Ayrıca bir veri koruma
+      denetim makamına şikâyette bulunma hakkınız vardır.</p>
+    <h2>9. Çocuklar</h2>
+    <p>Uygulama genel bir kitleye uygundur ve çocuklardan bilerek kişisel veri toplamaz. Çalışması için ne
+      hesap ne de kişisel bilgi gerektirir.</p>
+    <h2>10. Bu politikadaki değişiklikler</h2>
+    <p>Uygulama geliştikçe bu politikayı güncelleyebiliriz. Güncel sürüm ve yürürlük tarihi en üstte
+      gösterilir. Esaslı değişiklikler yürürlüğe girmeden önce burada yansıtılır.</p>
+    <footer class="muted">Omeci Labs · <a href="mailto:support@omecilabs.com">support@omecilabs.com</a></footer>
+  </section>
+</div>
+
+<script>
+  (function(){
+    var subtitles={en:"Privacy Policy",de:"Datenschutzerklärung",tr:"Gizlilik Politikası"};
+    var dirs={en:"ltr",de:"ltr",tr:"ltr"};
+    var buttons=document.querySelectorAll(".langs button");
+    var sections=document.querySelectorAll("section[data-lang]");
+    function show(lang){
+      buttons.forEach(function(b){b.setAttribute("aria-selected", b.dataset.lang===lang);});
+      sections.forEach(function(s){s.hidden = s.dataset.lang!==lang;});
+      document.documentElement.lang=lang;
+      document.documentElement.dir=dirs[lang]||"ltr";
+      document.getElementById("subtitle").textContent=subtitles[lang]||"Privacy Policy";
+    }
+    buttons.forEach(function(b){b.addEventListener("click",function(){show(b.dataset.lang);});});
+    var nav=(navigator.language||"en").slice(0,2);
+    show(subtitles[nav]?nav:"en");
+  })();
+</script>
+</body>
+</html>
