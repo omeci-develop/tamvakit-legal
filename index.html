@@ -53,7 +53,7 @@
 
   <!-- ============ ENGLISH ============ -->
   <section data-lang="en">
-    <p class="muted"><strong>Effective date:</strong> 5 July 2026 · <strong>Version:</strong> 1.0</p>
+    <p class="muted"><strong>Effective date:</strong> 11 August 2026 · <strong>Version:</strong> 1.2</p>
     <h2>1. Who is responsible</h2>
     <p>This app (&ldquo;Tam Vakit&rdquo;, &ldquo;the app&rdquo;) is published by <strong>Omeci Labs</strong>
       (the &ldquo;we&rdquo;/&ldquo;us&rdquo;), the data controller under the EU General Data Protection
@@ -86,11 +86,21 @@
     <h3>3.3 Notifications (Adhan / prayer reminders)</h3>
     <p>Prayer-time notifications are scheduled and delivered <strong>locally on your device</strong>. There
       is <strong>no push server</strong> — nothing about your prayer schedule leaves the device.</p>
-    <h3>3.4 Optional official prayer-time source</h3>
-    <p>The app can optionally obtain prayer times from an official provider (e.g. the Turkish Diyanet).
-      <strong>This source is switched off in the published app.</strong> If a future build or setting enables
-      it, the location or city you select is sent to that provider only to retrieve the times, under that
-      provider&rsquo;s own privacy policy. We will update this policy before activating any such source.</p>
+    <h3>3.4 Official prayer times (Diyanet)</h3>
+    <p>When the calculation method is set to <strong>&ldquo;T&uuml;rkiye (Diyanet)&rdquo;</strong>, the app
+      shows the officially published times of the Turkish religious authority.</p>
+    <p><strong>Your app does not talk to Diyanet.</strong> We retrieve the times centrally and publish them as
+      static files; the app downloads only the file for the nearest published city. <strong>No location is
+      transmitted to Diyanet</strong> &mdash; neither your position nor your city.</p>
+    <p>Those files are hosted on <strong>GitHub Pages (GitHub Inc., USA)</strong>. Downloading them
+      necessarily transmits your device&rsquo;s <strong>IP address</strong> to GitHub, and the requested file
+      reveals which <strong>published city</strong> is used (city level &mdash; not your precise position). We
+      do not see these requests: as the site owner we receive no server logs. GitHub processes such access
+      data under its own <a href="https://docs.github.com/site-policy/privacy-policies/github-privacy-statement">GitHub&nbsp;Privacy&nbsp;Statement</a>.</p>
+    <p><strong>To avoid this download entirely:</strong> choose any calculation method other than
+      &ldquo;T&uuml;rkiye (Diyanet)&rdquo; under Settings &#9656; Calculation method. The app then computes
+      the times entirely on your device and makes <strong>no</strong> network connection for prayer times.</p>
+    <p>The app always states below the date whether the times shown are official or calculated.</p>
     <h3>3.5 Contacting support</h3>
     <p>If you use &ldquo;Report a problem&rdquo;, it opens a pre-filled email to
       <a href="mailto:support@omecilabs.com">support@omecilabs.com</a> in <strong>your</strong> mail app.
@@ -114,6 +124,15 @@
     <h2>5. Storage and retention</h2>
     <p>All app data is stored <strong>only on your device</strong>. We keep no copies because we have no
       servers. <strong>Uninstalling the app removes this data</strong> from your device.</p>
+    <h3>5.1 Android&rsquo;s automatic backup</h3>
+    <p>Android can back up app data to your <strong>Google Drive backup</strong> so it is available on a new
+      device. That is an operating-system feature, not ours &mdash; we have no access to it.</p>
+    <p><strong>Your location is excluded.</strong> Everything with a location reference &mdash; the last known
+      position, a manually chosen place, and the caches of the official times &mdash; is stored in an area we
+      explicitly <strong>exclude from the backup</strong> (both for the cloud backup and for direct
+      device-to-device transfer). Only your <strong>settings</strong> are backed up (language, calculation
+      method, reminders, appearance); they carry no location reference. If you do not want even that, you can
+      turn off Android&rsquo;s backup for the app in the system settings.</p>
     <h2>6. Recipients / third parties</h2>
     <p>We share personal data with <strong>no one</strong>. Data leaves your device only to the OS geocoding
       provider (Google / Apple, §3.2), the app store for purchases (§3.6), and an optional official
@@ -138,7 +157,7 @@
 
   <!-- ============ DEUTSCH ============ -->
   <section data-lang="de" hidden>
-    <p class="muted"><strong>Gültig ab:</strong> 5. Juli 2026 · <strong>Version:</strong> 1.0</p>
+    <p class="muted"><strong>Gültig ab:</strong> 11. August 2026 · <strong>Version:</strong> 1.2</p>
     <h2>1. Wer ist verantwortlich</h2>
     <p>Diese App (&bdquo;Tam Vakit&ldquo;, &bdquo;die App&ldquo;) wird von <strong>Omeci Labs</strong>
       (&bdquo;wir&ldquo;/&bdquo;uns&ldquo;) herausgegeben. Wir sind Verantwortlicher im Sinne der
@@ -172,12 +191,24 @@
     <h3>3.3 Benachrichtigungen (Adhan / Gebetserinnerungen)</h3>
     <p>Benachrichtigungen werden <strong>lokal auf deinem Gerät</strong> geplant und ausgelöst. Es gibt
       <strong>keinen Push-Server</strong> — nichts über deinen Gebetsplan verlässt das Gerät.</p>
-    <h3>3.4 Optionale offizielle Gebetszeiten-Quelle</h3>
-    <p>Die App kann Gebetszeiten optional von einer offiziellen Quelle beziehen (z. B. der türkischen
-      Diyanet). <strong>In der veröffentlichten App ist diese Quelle abgeschaltet.</strong> Aktiviert ein
-      künftiger Build oder eine Einstellung sie, wird der gewählte Standort bzw. die Stadt ausschließlich zum
-      Abruf der Zeiten an diesen Anbieter gesendet — nach dessen Datenschutzerklärung. Wir aktualisieren diese
-      Erklärung, bevor eine solche Quelle aktiviert wird.</p>
+    <h3>3.4 Amtliche Gebetszeiten (Diyanet)</h3>
+    <p>Ist als Berechnungsmethode <strong>&bdquo;Türkiye (Diyanet)&ldquo;</strong> eingestellt, zeigt die App
+      die amtlich veröffentlichten Zeiten der türkischen Religionsbehörde.</p>
+    <p><strong>Deine App spricht dabei nicht mit Diyanet.</strong> Wir rufen die Zeiten zentral ab und
+      veröffentlichen sie als statische Dateien; die App lädt daraus nur die Datei des nächstgelegenen
+      veröffentlichten Ortes. <strong>Es wird also kein Standort an Diyanet übermittelt</strong> — weder deine
+      Position noch deine Stadt.</p>
+    <p>Diese Dateien liegen bei <strong>GitHub Pages (GitHub Inc., USA)</strong>. Beim Laden übermittelt dein
+      Gerät technisch zwangsläufig seine <strong>IP-Adresse</strong> an GitHub; aus der angeforderten Datei
+      ergibt sich zudem, welcher <strong>veröffentlichte Ort</strong> verwendet wird (Stadtebene — nicht deine
+      genaue Position). Wir sehen diese Zugriffe nicht: Als Betreiber der Seiten erhalten wir keine
+      Server-Protokolle. GitHub verarbeitet solche Zugriffsdaten nach eigener Erklärung, dem <a href="https://docs.github.com/site-policy/privacy-policies/github-privacy-statement">GitHub&nbsp;Privacy&nbsp;Statement</a>.</p>
+    <p><strong>So vermeidest du auch diesen Abruf vollständig:</strong> Wähle unter Einstellungen &#9656;
+      Berechnungsmethode eine andere Methode als &bdquo;Türkiye (Diyanet)&ldquo;. Dann rechnet die App die
+      Zeiten ausschließlich auf deinem Gerät und stellt <strong>keinerlei</strong> Netzwerkverbindung für
+      Gebetszeiten her.</p>
+    <p>Ob die angezeigten Zeiten amtlich oder selbst berechnet sind, steht in der App jederzeit unter dem
+      Datum.</p>
     <h3>3.5 Support-Kontakt</h3>
     <p>Nutzt du &bdquo;Problem melden&ldquo;, öffnet sich in <strong>deiner</strong> Mail-App eine
       vorbefüllte E-Mail an <a href="mailto:support@omecilabs.com">support@omecilabs.com</a>. Vor dem Senden
@@ -201,6 +232,17 @@
     <p>Alle App-Daten werden <strong>nur auf deinem Gerät</strong> gespeichert. Wir behalten keine Kopien, da
       wir keine Server haben. <strong>Beim Deinstallieren werden diese Daten</strong> von deinem Gerät
       entfernt.</p>
+    <h3>5.1 Androids automatische Sicherung</h3>
+    <p>Android sichert App-Daten auf Wunsch in deine <strong>Google-Drive-Sicherung</strong>, damit sie auf
+      einem neuen Gerät wieder da sind. Das ist eine Funktion des Betriebssystems, nicht von uns — wir haben
+      darauf keinen Zugriff.</p>
+    <p><strong>Dein Standort ist davon ausgenommen.</strong> Alles mit Ortsbezug — der zuletzt bekannte
+      Standort, ein manuell gewählter Ort und die Zwischenspeicher der amtlichen Zeiten — liegt in einem
+      Bereich, den wir ausdrücklich <strong>von der Sicherung ausschließen</strong> (sowohl für die
+      Google-Sicherung als auch für die direkte Übertragung auf ein neues Gerät). Gesichert werden nur deine
+      <strong>Einstellungen</strong> (Sprache, Berechnungsmethode, Erinnerungen, Erscheinungsbild); sie haben
+      keinen Ortsbezug. Wer auch das nicht möchte, kann Androids Sicherung für die App in den
+      Systemeinstellungen abschalten.</p>
     <h2>6. Empfänger / Dritte</h2>
     <p>Wir geben personenbezogene Daten an <strong>niemanden</strong> weiter. Daten verlassen dein Gerät nur
       an den OS-Geocoding-Dienst (Google / Apple, §3.2), den App-Store für Käufe (§3.6) und einen optionalen
@@ -227,7 +269,7 @@
 
   <!-- ============ TÜRKÇE ============ -->
   <section data-lang="tr" hidden>
-    <p class="muted"><strong>Yürürlük tarihi:</strong> 5 Temmuz 2026 · <strong>Sürüm:</strong> 1.0</p>
+    <p class="muted"><strong>Yürürlük tarihi:</strong> 11 Ağustos 2026 · <strong>Sürüm:</strong> 1.2</p>
     <h2>1. Sorumlu kim</h2>
     <p>Bu uygulama (&ldquo;Tam Vakit&rdquo;, &ldquo;uygulama&rdquo;) <strong>Omeci Labs</strong>
       (&ldquo;biz&rdquo;) tarafından yayımlanmaktadır. AB Genel Veri Koruma Tüzüğü (GDPR) anlamında veri
@@ -259,12 +301,22 @@
     <h3>3.3 Bildirimler (ezan / namaz hatırlatmaları)</h3>
     <p>Bildirimler <strong>cihazınızda yerel olarak</strong> planlanır ve gösterilir. <strong>Push sunucusu
       yoktur</strong> — namaz programınıza dair hiçbir şey cihazdan ayrılmaz.</p>
-    <h3>3.4 İsteğe bağlı resmî namaz vakti kaynağı</h3>
-    <p>Uygulama namaz vakitlerini isteğe bağlı olarak resmî bir kaynaktan (örn. Diyanet) alabilir.
-      <strong>Yayımlanan uygulamada bu kaynak kapalıdır.</strong> İleride bir sürüm veya ayar bunu
-      etkinleştirirse, seçtiğiniz konum veya şehir yalnızca vakitleri almak için o sağlayıcıya gönderilir ve
-      sağlayıcının gizlilik politikasına tabidir. Böyle bir kaynağı etkinleştirmeden önce bu politikayı
-      güncelleriz.</p>
+    <h3>3.4 Resmî namaz vakitleri (Diyanet)</h3>
+    <p>Hesaplama yöntemi <strong>&bdquo;Türkiye (Diyanet)&ldquo;</strong> olarak ayarlıysa, uygulama Diyanet
+      İşleri Başkanlığı&rsquo;nın resmî olarak yayımladığı vakitleri gösterir.</p>
+    <p><strong>Uygulamanız Diyanet ile iletişim kurmaz.</strong> Vakitleri merkezî olarak biz alır ve statik
+      dosyalar hâlinde yayımlarız; uygulama bunlardan yalnızca en yakın yayımlanmış şehrin dosyasını indirir.
+      <strong>Diyanet&rsquo;e hiçbir konum gönderilmez</strong> — ne konumunuz ne de şehriniz.</p>
+    <p>Bu dosyalar <strong>GitHub Pages (GitHub Inc., ABD)</strong> üzerinde barındırılır. İndirme sırasında
+      cihazınız teknik olarak zorunlu biçimde <strong>IP adresini</strong> GitHub&rsquo;a iletir; istenen
+      dosyadan ayrıca hangi <strong>yayımlanmış şehrin</strong> kullanıldığı anlaşılır (şehir düzeyi — kesin
+      konumunuz değil). Bu erişimleri biz görmeyiz: sayfaların sahibi olarak sunucu günlüklerine erişimimiz
+      yoktur. GitHub bu erişim verilerini kendi bildirimine göre işler: <a href="https://docs.github.com/site-policy/privacy-policies/github-privacy-statement">GitHub&nbsp;Privacy&nbsp;Statement</a>.</p>
+    <p><strong>Bu indirmeyi tamamen önlemek için:</strong> Ayarlar &#9656; Hesaplama yöntemi altından
+      &bdquo;Türkiye (Diyanet)&ldquo; dışında bir yöntem seçin. Uygulama vakitleri yalnızca cihazınızda
+      hesaplar ve namaz vakitleri için <strong>hiçbir</strong> ağ bağlantısı kurmaz.</p>
+    <p>Gösterilen vakitlerin resmî mi yoksa hesaplanmış mı olduğu, uygulamada her zaman tarihin altında
+      yazar.</p>
     <h3>3.5 Destek ile iletişim</h3>
     <p>&ldquo;Sorun bildir&rdquo; seçeneğini kullanırsanız, <strong>kendi</strong> e-posta uygulamanızda
       <a href="mailto:support@omecilabs.com">support@omecilabs.com</a> adresine önceden doldurulmuş bir
@@ -288,6 +340,16 @@
     <h2>5. Saklama ve saklama süresi</h2>
     <p>Tüm uygulama verileri <strong>yalnızca cihazınızda</strong> saklanır. Sunucumuz olmadığından kopya
       tutmayız. <strong>Uygulamayı kaldırmak bu verileri</strong> cihazınızdan siler.</p>
+    <h3>5.1 Android&rsquo;in otomatik yedeklemesi</h3>
+    <p>Android, uygulama verilerini yeni bir cihazda kullanılabilsin diye <strong>Google Drive
+      yedeğinize</strong> yedekleyebilir. Bu, bizim değil işletim sisteminin bir özelliğidir — buna erişimimiz
+      yoktur.</p>
+    <p><strong>Konumunuz bunun dışındadır.</strong> Konumla ilgili her şey — son bilinen konum, elle seçilen
+      yer ve resmî vakitlerin önbellekleri — yedeklemeden açıkça <strong>hariç tuttuğumuz</strong> bir alanda
+      saklanır (hem bulut yedeği hem de doğrudan cihazdan cihaza aktarım için). Yalnızca
+      <strong>ayarlarınız</strong> yedeklenir (dil, hesaplama yöntemi, hatırlatmalar, görünüm); bunların
+      konumla ilgisi yoktur. Bunu da istemiyorsanız, sistem ayarlarından uygulama için Android yedeklemesini
+      kapatabilirsiniz.</p>
     <h2>6. Alıcılar / üçüncü taraflar</h2>
     <p>Kişisel verileri <strong>hiç kimseyle</strong> paylaşmayız. Veriler cihazınızdan yalnızca işletim
       sisteminizin coğrafi kodlama sağlayıcısına (Google / Apple, §3.2), satın almalar için uygulama
