@@ -110,7 +110,7 @@ footer .gold{color:var(--gold);}
       <li><a href="#en-11-contact">11. Contact</a></li>
     </ol></div>
 <h1>Privacy Policy — Tam Vakit</h1>
-<p><strong>Effective date:</strong> 4 September 2026 · <strong>Version:</strong> 1.4</p>
+<p><strong>Effective date:</strong> 27 September 2026 · <strong>Version:</strong> 1.6</p>
 <h2 id="en-1-who-is-responsible">1. Who is responsible</h2>
 <p>This app (&quot;Tam Vakit&quot;, &quot;the app&quot;) is published by <strong>Omeci Labs</strong> (the &quot;we&quot;/&quot;us&quot;), the data controller within the meaning of the EU General Data Protection Regulation (GDPR).</p>
 <ul>
@@ -175,7 +175,7 @@ footer .gold{color:var(--gold);}
 <ul>
 <li><strong>Where to:</strong> <strong>nowhere.</strong> This never leaves your device. We never see it and</li>
 </ul>
-<p>have no server that could receive it — no account, no sync, no analysis.</p>
+<p>have no server that could receive it — no account, no sync, no analysis. The only exception: you create a backup file yourself (§5.2).</p>
 <ul>
 <li><strong>Backup:</strong> because the log sits with the settings, Android's automatic backup</li>
 </ul>
@@ -197,9 +197,13 @@ footer .gold{color:var(--gold);}
 <p>All app data (your location, settings, caches) is stored <strong>only on your device</strong>. We keep no copies because we have no servers. <strong>Uninstalling the app removes this data</strong> from your device.</p>
 <h3>5.1 Android's automatic backup</h3>
 <p>Android can back up app data to your <strong>Google Drive backup</strong> so it is available on a new device. That is an operating-system feature, not ours — we have no access to it.</p>
-<p><strong>Your location is excluded.</strong> Everything with a location reference — the last known position, a manually chosen place, and the caches of the official times — is stored in an area we explicitly <strong>exclude from the backup</strong> (both for the cloud backup and for direct device-to-device transfer).</p>
-<p>Your <strong>settings</strong> (language, calculation method, reminders, appearance) and your <strong>prayer log</strong> (§3.8) are backed up. Neither carries a location reference, and you will find them on a new device.</p>
+<p><strong>Your location is excluded.</strong> Everything with a location reference — the last known position, a manually chosen place, your chosen mosque, the caches of the official times and the display of the home-screen widget — is stored in an area we explicitly <strong>exclude from the backup</strong> (both for the cloud backup and for direct device-to-device transfer). On a new device you therefore choose your mosque once again.</p>
+<p>Your <strong>settings</strong> (language, calculation method, reminders, appearance) and your <strong>prayer log</strong> (§3.8) are backed up. Neither carries a location reference, and you will find them on a new device. Your self-entered <strong>congregation times</strong> are backed up as well: they are tied only to the mosque's identifier in the public directory and reappear as soon as you choose the same mosque again.</p>
 <p>If you do not want even that, you can turn off Android's backup for the app in the system settings.</p>
+<h3>5.2 Backup file (at your request)</h3>
+<p>Under Settings ▸ Backup you can create a <strong>backup file</strong> — for a new phone, including a switch between Android and iPhone. It contains your prayer log, your prayers to make up, your fasting diary, your tasbih counters and, if you choose, your settings. It does <strong>not</strong> contain your location, a manually chosen place, your mosque and its congregation times, caches, credentials or your Premium status.</p>
+<p>The file is created <strong>only when you create it</strong> and goes <strong>wherever you send it</strong> (e-mail, messenger, cloud storage, USB) — never to us. If you choose, it is encrypted with a password (Argon2id, AES-256-GCM); without that password it cannot be opened, not even by us. Without a password it is readable by anyone who gets hold of it.</p>
+<p>Before any backup is restored, the app keeps the previous state on your device so you can return to it for 30 days. This copy is excluded from Android's backup.</p>
 <h2 id="en-6-recipients-third-parties">6. Recipients / third parties</h2>
 <p>We share personal data with <strong>no one</strong>. Data leaves your device only to the platform services named above, and only for the stated purpose:</p>
 <ul>
@@ -234,7 +238,7 @@ footer .gold{color:var(--gold);}
       <li><a href="#de-11-kontakt">11. Kontakt</a></li>
     </ol></div>
 <h1>Datenschutzerklärung — Tam Vakit</h1>
-<p><strong>Gültig ab:</strong> 4. September 2026 · <strong>Version:</strong> 1.4</p>
+<p><strong>Gültig ab:</strong> 27. September 2026 · <strong>Version:</strong> 1.6</p>
 <h2 id="de-1-wer-ist-verantwortlich">1. Wer ist verantwortlich</h2>
 <p>Diese App („Tam Vakit&quot;, „die App&quot;) wird von <strong>Omeci Labs</strong> („wir&quot;/„uns&quot;) herausgegeben. Wir sind Verantwortlicher im Sinne der EU-Datenschutz- Grundverordnung (DSGVO).</p>
 <ul>
@@ -299,7 +303,7 @@ footer .gold{color:var(--gold);}
 <ul>
 <li><strong>Wohin:</strong> <strong>nirgendwohin.</strong> Diese Angaben verlassen dein Gerät nicht. Wir</li>
 </ul>
-<p>sehen sie nie und haben keinen Server, der sie annehmen könnte — kein Konto, keine Synchronisierung, keine Auswertung.</p>
+<p>sehen sie nie und haben keinen Server, der sie annehmen könnte — kein Konto, keine Synchronisierung, keine Auswertung. Einzige Ausnahme: Du legst selbst eine Sicherungsdatei an (§5.2).</p>
 <ul>
 <li><strong>Sicherung:</strong> Weil das Protokoll bei den Einstellungen liegt, nimmt Androids</li>
 </ul>
@@ -321,9 +325,13 @@ footer .gold{color:var(--gold);}
 <p>Alle App-Daten (Standort, Einstellungen, Caches) werden <strong>nur auf deinem Gerät</strong> gespeichert. Wir behalten keine Kopien, da wir keine Server haben. <strong>Beim Deinstallieren der App werden diese Daten</strong> von deinem Gerät entfernt.</p>
 <h3>5.1 Androids automatische Sicherung</h3>
 <p>Android sichert App-Daten auf Wunsch in deine <strong>Google-Drive-Sicherung</strong>, damit sie auf einem neuen Gerät wieder da sind. Das ist eine Funktion des Betriebssystems, nicht von uns — wir haben darauf keinen Zugriff.</p>
-<p><strong>Dein Standort ist davon ausgenommen.</strong> Wir legen alles mit Ortsbezug — den zuletzt bekannten Standort, einen manuell gewählten Ort und die Zwischenspeicher der amtlichen Zeiten — in einem Bereich ab, den wir ausdrücklich <strong>von der Sicherung ausschließen</strong> (sowohl für die Google-Sicherung als auch für die direkte Übertragung auf ein neues Gerät).</p>
-<p>Gesichert werden deine <strong>Einstellungen</strong> (Sprache, Berechnungsmethode, Erinnerungen, Erscheinungsbild) und dein <strong>Gebetsprotokoll</strong> (§3.8). Beides hat keinen Ortsbezug, und du findest es auf einem neuen Gerät wieder vor.</p>
+<p><strong>Dein Standort ist davon ausgenommen.</strong> Wir legen alles mit Ortsbezug — den zuletzt bekannten Standort, einen manuell gewählten Ort, deine gewählte Moschee, die Zwischenspeicher der amtlichen Zeiten und die Anzeige des Startbildschirm- Widgets — in einem Bereich ab, den wir ausdrücklich <strong>von der Sicherung ausschließen</strong> (sowohl für die Google-Sicherung als auch für die direkte Übertragung auf ein neues Gerät). Auf einem neuen Gerät wählst du deine Moschee deshalb einmal neu.</p>
+<p>Gesichert werden deine <strong>Einstellungen</strong> (Sprache, Berechnungsmethode, Erinnerungen, Erscheinungsbild) und dein <strong>Gebetsprotokoll</strong> (§3.8). Beides hat keinen Ortsbezug, und du findest es auf einem neuen Gerät wieder vor. Ebenso gesichert sind deine selbst eingetragenen <strong>Cemaat-Zeiten</strong>: Sie hängen nur an der Kennung der Moschee im öffentlichen Verzeichnis und erscheinen wieder, sobald du dieselbe Moschee erneut wählst.</p>
 <p>Wer auch das nicht möchte, kann Androids Sicherung für die App in den Systemeinstellungen abschalten.</p>
+<h3>5.2 Sicherungsdatei (auf deinen Wunsch)</h3>
+<p>Unter Einstellungen ▸ Sicherung kannst du eine <strong>Sicherungsdatei</strong> erzeugen — etwa für ein neues Handy, auch beim Wechsel zwischen Android und iPhone. Sie enthält dein Gebetsprotokoll, dein Kazā-Konto, dein Fastentagebuch, deine Tesbih-Zähler und auf Wunsch deine Einstellungen. <strong>Nicht enthalten</strong> sind dein Standort, ein manuell gewählter Ort, deine Moschee samt Cemaat-Zeiten, Zwischenspeicher, Zugangsdaten und dein Premium-Status.</p>
+<p>Die Datei entsteht <strong>nur, wenn du sie anlegst</strong>, und geht <strong>dorthin, wohin du sie schickst</strong> (Mail, Messenger, Cloud-Speicher, USB) — nie an uns. Auf Wunsch wird sie mit einem Passwort verschlüsselt (Argon2id, AES-256-GCM); ohne dieses Passwort lässt sie sich nicht öffnen, auch nicht von uns. Ohne Passwort ist sie für jeden lesbar, der sie in die Hände bekommt.</p>
+<p>Vor jedem Einspielen einer Sicherung legt die App den bisherigen Stand auf deinem Gerät ab, damit du 30 Tage lang zurückkehren kannst. Diese Ablage ist von der Android-Sicherung ausgenommen.</p>
 <h2 id="de-6-empfänger-dritte">6. Empfänger / Dritte</h2>
 <p>Wir geben personenbezogene Daten an <strong>niemanden</strong> weiter. Daten verlassen dein Gerät nur an die oben genannten Plattformdienste und nur zum genannten Zweck:</p>
 <ul>
@@ -358,7 +366,7 @@ footer .gold{color:var(--gold);}
       <li><a href="#tr-11-iletişim">11. İletişim</a></li>
     </ol></div>
 <h1>Gizlilik Politikası — Tam Vakit</h1>
-<p><strong>Yürürlük tarihi:</strong> 4 Eylül 2026 · <strong>Sürüm:</strong> 1.4</p>
+<p><strong>Yürürlük tarihi:</strong> 27 Eylül 2026 · <strong>Sürüm:</strong> 1.6</p>
 <h2 id="tr-1-sorumlu-kim">1. Sorumlu kim</h2>
 <p>Bu uygulama (&quot;Tam Vakit&quot;, &quot;uygulama&quot;) <strong>Omeci Labs</strong> (&quot;biz&quot;) tarafından yayımlanmaktadır. AB Genel Veri Koruma Tüzüğü (GDPR) anlamında veri sorumlusu biziz.</p>
 <ul>
@@ -423,7 +431,7 @@ footer .gold{color:var(--gold);}
 <ul>
 <li><strong>Nereye:</strong> <strong>hiçbir yere.</strong> Bu bilgiler cihazınızdan ayrılmaz. Biz onları hiç</li>
 </ul>
-<p>görmeyiz ve alabilecek bir sunucumuz yoktur — hesap yok, eşitleme yok, değerlendirme yok.</p>
+<p>görmeyiz ve alabilecek bir sunucumuz yoktur — hesap yok, eşitleme yok, değerlendirme yok. Tek istisna: yedek dosyasını kendiniz oluşturmanız (§5.2).</p>
 <ul>
 <li><strong>Yedekleme:</strong> kayıt ayarların yanında durduğu için Android'in otomatik</li>
 </ul>
@@ -445,9 +453,13 @@ footer .gold{color:var(--gold);}
 <p>Tüm uygulama verileri (konum, ayarlar, önbellekler) <strong>yalnızca cihazınızda</strong> saklanır. Sunucumuz olmadığından hiçbir kopya tutmayız. <strong>Uygulamayı kaldırmak bu verileri</strong> cihazınızdan siler.</p>
 <h3>5.1 Android'in otomatik yedeklemesi</h3>
 <p>Android, uygulama verilerini yeni bir cihazda kullanılabilsin diye <strong>Google Drive yedeğinize</strong> yedekleyebilir. Bu, bizim değil işletim sisteminin bir özelliğidir — buna erişimimiz yoktur.</p>
-<p><strong>Konumunuz bunun dışındadır.</strong> Konumla ilgili her şey — son bilinen konum, elle seçilen yer ve resmî vakitlerin önbellekleri — yedeklemeden açıkça <strong>hariç tuttuğumuz</strong> bir alanda saklanır (hem bulut yedeği hem de doğrudan cihazdan cihaza aktarım için).</p>
-<p><strong>Ayarlarınız</strong> (dil, hesaplama yöntemi, hatırlatmalar, görünüm) ve <strong>namaz takibiniz</strong> (§3.8) yedeklenir. İkisinin de konumla ilgisi yoktur ve yeni cihazınızda hazır bulursunuz.</p>
+<p><strong>Konumunuz bunun dışındadır.</strong> Konumla ilgili her şey — son bilinen konum, elle seçilen yer, seçtiğiniz cami, resmî vakitlerin önbellekleri ve ana ekran widget'ının görüntüsü — yedeklemeden açıkça <strong>hariç tuttuğumuz</strong> bir alanda saklanır (hem bulut yedeği hem de doğrudan cihazdan cihaza aktarım için). Bu yüzden yeni bir cihazda caminizi bir kez yeniden seçersiniz.</p>
+<p><strong>Ayarlarınız</strong> (dil, hesaplama yöntemi, hatırlatmalar, görünüm) ve <strong>namaz takibiniz</strong> (§3.8) yedeklenir. İkisinin de konumla ilgisi yoktur ve yeni cihazınızda hazır bulursunuz. Kendi girdiğiniz <strong>cemaat vakitleri</strong> de yedeklenir: Yalnızca caminin herkese açık rehberdeki kimliğine bağlıdır ve aynı camiyi yeniden seçtiğinizde geri gelir.</p>
 <p>Bunu da istemiyorsanız, sistem ayarlarından uygulama için Android yedeklemesini kapatabilirsiniz.</p>
+<h3>5.2 Yedek dosyası (isteğiniz üzerine)</h3>
+<p>Ayarlar ▸ Yedekleme altında bir <strong>yedek dosyası</strong> oluşturabilirsiniz — örneğin yeni bir telefon için, Android ile iPhone arasında geçişte de. Dosya namaz takibinizi, kaza namazlarınızı, oruç takibinizi, tesbih sayaçlarınızı ve isterseniz ayarlarınızı içerir. Konumunuz, elle seçilen yer, önbellekler, caminiz ve cemaat vakitleri, erişim bilgileri ve Premium durumunuz <strong>içinde yer almaz</strong>.</p>
+<p>Dosya <strong>yalnızca siz oluşturduğunuzda</strong> oluşur ve <strong>sizin gönderdiğiniz yere</strong> gider (e-posta, mesajlaşma, bulut depolama, USB) — bize asla. İsterseniz bir şifreyle şifrelenir (Argon2id, AES-256-GCM); bu şifre olmadan açılamaz, bizim tarafımızdan da. Şifresiz dosyayı eline geçiren herkes okuyabilir.</p>
+<p>Bir yedek geri yüklenmeden önce uygulama önceki durumu cihazınızda saklar; böylece 30 gün boyunca geri dönebilirsiniz. Bu kopya Android yedeklemesinin dışında tutulur.</p>
 <h2 id="tr-6-alıcılar-üçüncü-taraflar">6. Alıcılar / üçüncü taraflar</h2>
 <p>Kişisel verileri <strong>hiç kimseyle</strong> paylaşmayız. Veriler cihazınızdan yalnızca yukarıda adı geçen platform hizmetlerine ve yalnızca belirtilen amaçla ayrılır:</p>
 <ul>
